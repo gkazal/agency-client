@@ -15,7 +15,7 @@ const ServiceRegisterInfo = () => {
 
     return (
         <div>
-            {/* <h3>You have {serviceRegisterInfo.length} service</h3> */}
+            <h3>You have {serviceRegisterInfo.length} service</h3>
             {
                 serviceRegisterInfo.map((reg => <ServiceRegisterList register={reg}></ServiceRegisterList>))
             }

@@ -8,7 +8,7 @@ const FinishedWork = () => {
                 <div >
                     <h1>Some of our finest work</h1>
                 </div>
-                <div class="card" style={{width: '18rem'}}>
+                <div class="card" style={{width: '18rem',}}>
                 <img class="card-img-top" src={work1} alt="Card image cap" />
                 <div class="card-body">
                     <h5 class="card-title">title</h5>
