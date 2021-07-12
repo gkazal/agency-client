@@ -1,0 +1,5 @@
+.btn:hover{
+    /* background-color: #3e8e41; */
+    /* opacity: '0.5'; */
+    transition:'delay(2),duration(2)';
+}
