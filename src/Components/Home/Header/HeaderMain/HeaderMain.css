@@ -1,0 +1,29 @@
+.headerImage {
+    animation-name: myAnimation;
+    animation-duration: 6s;
+    animation-iteration-count: 4;
+
+}
+@keyframes myAnimation {
+    0% {left: 40px ; top: 0px;}
+    50% {left: 0px ; top: 40px;}
+    100% {left: 40px; top: 0px;}
+}
+
+.headerText {
+    animation-name: myAnimation2;
+    animation-duration: 3s;
+    /* animation-iteration-count: infinite; */
+    animation-fill-mode: forwards;
+}
+@keyframes myAnimation2 {
+    0% {left: -500px;}
+    100% {left: 0;}
+}
+
+
+.headerButton:hover {
+    box-shadow: inset 150px 0 0 0 #a6cbe2;
+   
+    
+}

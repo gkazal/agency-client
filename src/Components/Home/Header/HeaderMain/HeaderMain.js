@@ -1,5 +1,6 @@
 import React from 'react';
 import bgImage from '../../../../image/service/headerBackground.jpg'
+import './HeaderMain.css'
 
 const HeaderMain = () => {
     const buttonStyle = {
@@ -10,12 +11,12 @@ const HeaderMain = () => {
 
     return (
         <main className="row d-flex align-items-center offset-md-1 mt-2">
-            <div className="col-md-4">
+            <div className="headerText col-md-4">
                 <h1 style={{ fontWeight: 'bold', fontSize: '60px' }}>Lets Grow <br/> Up Your Application</h1>
-                <button style={buttonStyle} class="btn  ">JOIN US</button>
+                <button style={buttonStyle} class="headerButton btn">JOIN US</button>
 
             </div>
-            <div className="col-md-6">
+            <div className="headerImage col-md-6">
                 <img style={{ width: '120%', height: '100%' }} src={bgImage} alt="" />
 
             </div>
