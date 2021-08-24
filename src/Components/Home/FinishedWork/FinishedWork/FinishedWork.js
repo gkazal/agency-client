@@ -22,7 +22,7 @@ const FinishedWork = () => {
                         <img class="card-img-top" src={work1} alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Creative Business</h5>
-                            <a style={buttonStyle} href="#" class="btn headerButton">Details</a>
+                            <a  href="#" class="btn headerButton">Details</a>
                         </div>
                     </div>
                 </Tilt>
@@ -31,7 +31,7 @@ const FinishedWork = () => {
                         <img class="card-img-top" src={work2} alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Social Business</h5>
-                            <a style={buttonStyle} href="#" class="btn headerButton">Details</a>
+                            <a  href="#" class="btn headerButton">Details</a>
                         </div>
                     </div>
                 </Tilt>
@@ -40,7 +40,7 @@ const FinishedWork = () => {
                         <img class="card-img-top" src={work3} alt="Card image cap" />
                         <div class="card-body">
                             <h5 class="card-title">Social Business</h5>
-                            <a style={buttonStyle} href="#" class="btn headerButton">Details</a>
+                            <a  href="#" class="btn headerButton">Details</a>
                         </div>
                     </div>
                 </Tilt>

@@ -45,7 +45,7 @@ const MakeAdmin = () => {
                             <h4 style={{ margin: '20px', fontWeight: 'bold' }}> Make Your Admin</h4>
                             <div className="col-md-12">
 
-                                <div style={{ backgroundColor: '#C2DFFF', height: '300px', borderRadius: '10px',padding:'20px' }}>
+                                <div style={{ backgroundColor: '#81D8D0', height: '300px', borderRadius: '10px',padding:'20px' }}>
                                     <form className="form-inline ">
                                         <label for="validationTooltip01">Email</label>
                                     </form>

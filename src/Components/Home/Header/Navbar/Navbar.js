@@ -36,13 +36,12 @@ const Navbar = () => {
 
 
     return (
-        <div style={{ backgroundColor: '#F0F8FF' }}>
+        <div style={{ backgroundColor: '#81D8D0' }}>
             <nav class="navbar navbar-expand-lg navbar-light col-md-10 offset-md-1 " >
-                <img style={{ width: '130px' }} src={logo} alt="" />
+                <img style={{ width: '100px' }} src={logo} alt="" />
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ml-auto">

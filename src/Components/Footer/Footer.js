@@ -7,14 +7,14 @@ const Footer = () => {
 
     return (
 
-        <section style={{ backgroundColor: '#95B9C7'}}>
+        <section style={{ backgroundColor: '#81D8D0'}}>
             <div>
                 <div className=" pt-5 pb-5">
                     <h2 className="text-center ">Follow us for further information</h2>
 
                     <div class=" d-flex search-box mt-4" >
                         <input class="search-txt" type="text" placeholder="Enter Your Email" />
-                        <button className="search-btn btn" style={{ font_weight: 'bold' }}>
+                        <button className="search-btn headerButton" style={{ font_weight: 'bold' }}>
                             Subscribe
                         </button>
                     </div>

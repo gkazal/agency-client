@@ -60,7 +60,7 @@ const Login = () => {
                     <img style={{ width: '100%', height: '100%' }} src={bgImage} alt="" />
                 </Col>
                 <Col md={6} sm={12}>
-                    <Form className="form" >
+                    <Form className="form" style={{backgroundColor: '#81D8D0'}}>
                         <Row style={{ fontSize: '25px', fontWeight: 'bold', justifyContent: 'center', marginBottom: '30px' }}>Login Form</Row>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>
@@ -77,10 +77,10 @@ const Login = () => {
                         </Button>
                         <Button className="googleButton" onClick={handleGoogleSignIn}>
                             <div className="row">
-                                <div className="col-md-3">
+                                <div className="col-md-3 col-3">
                                     <img style={{ width: '20px' }} src={google} alt="" />
                                 </div>
-                                <div className="col-md-6">
+                                <div className="col-md-6 col-6 google">
                                     Sign In With Google
                                 </div>
                             </div>

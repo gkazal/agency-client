@@ -23,21 +23,23 @@ const FeedbackPost = (props) => {
     const classes = useStyles();
 
     const {name, company, image, description} = props.feedback
-
+   
     return (
-        <div class=" m-2" style={{ width: '18rem',border: '1px solid orange' }}>
+        <div class=" m-2" style={{ width: '18rem',borderTopStyle:'groove',borderTopWidth:'5px',borderTopColor:'cyan',backgroundColor:'white' }}>
             <div className="row card-body">
-                <div className="mr-3 ml-2">
+                <div className=" col-md-3 col-3">
                     <Avatar alt="Remy Sharp" src={image} className={classes.large} /> 
-                </div>
+                    {/* <img style={{ width:'100%'}} src={image} class="card-img-top rounded mx-auto d-block" alt="..."/> */}
 
-                <div >
+                    
+                </div>
+                <div className="col-md-9 col-9" style={{textAlign:'center'}}>
                     <h5 class="card-title">{name}</h5>
                     <h6 className="card-title">{company}</h6>
                 </div>
             </div>
 
-            <div className="card-body">
+            <div className="card-body" >
                 <p class="card-text">{description}</p>
 
             </div>
