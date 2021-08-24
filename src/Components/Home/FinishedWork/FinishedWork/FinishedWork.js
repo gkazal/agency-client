@@ -5,11 +5,6 @@ import work3 from '../../../../image/works/3_4x.png'
 import Tilt from 'react-vanilla-tilt'
 
 const FinishedWork = () => {
-    const buttonStyle = {
-        margin: '10px', padding: '10px', textAlign: 'center', border: 'none', width: '150px',
-        borderRadius: "40px",
-        backgroundColor: '#FFDB58'
-    }
 
     return (
         <div style={{ backgroundColor: '#F5FFFA', marginTop: '80px' }} >

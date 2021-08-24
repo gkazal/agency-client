@@ -74,7 +74,7 @@ const WorkType = () => {
                         <h6 className="text-danger" style={cardStyle}> What We Do?</h6>
                         <h1 style={cardStyle}>Services We Can Help You With</h1>
                     </div>
-                    <div style={{margin:'50px'}} >
+                    <div className="container" >
                         <Slider {...settings}>
                             {
                                 services.map(services => <ServiceList services={services}></ServiceList>)

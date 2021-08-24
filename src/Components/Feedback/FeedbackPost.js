@@ -25,7 +25,7 @@ const FeedbackPost = (props) => {
     const {name, company, image, description} = props.feedback
    
     return (
-        <div class=" m-2" style={{ width: '18rem',borderTopStyle:'groove',borderTopWidth:'5px',borderTopColor:'cyan',backgroundColor:'white' }}>
+        <div class=" m-2" style={{ width: '19rem',borderLeftStyle:'groove',borderLeftWidth:'5px',borderLeftColor:'cyan',backgroundColor:'white' }}>
             <div className="row card-body">
                 <div className=" col-md-3 col-3">
                     <Avatar alt="Remy Sharp" src={image} className={classes.large} /> 

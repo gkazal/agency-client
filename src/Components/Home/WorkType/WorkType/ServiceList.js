@@ -23,9 +23,7 @@ const ServiceList = (props) => {
             height: '200px',
             align: 'center'
         },
-        center: {
-            justifyContent: "center", display: 'flex'
-        },
+        
         buttonStyle: {
              border: 'none',
             borderRadius: "20px",
@@ -36,7 +34,7 @@ const ServiceList = (props) => {
 
     return (
         // <div className="col-xl-12 col-lg-12 col-md-12  m-2" >
-            <div>
+            <div className="">
                 <div style={{ margin: '10px', borderRadius: '20px', padding:'10px',boxShadow: '0px 10px 40px rgb(0 0 0 / 10%'}}>
                     <img style={cardStyle.img} class="card-img-top" src={imageUrl} alt="Card image cap" />
                     <div class="card-body">
