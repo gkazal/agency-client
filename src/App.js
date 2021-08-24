@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -7,14 +6,17 @@ import {
   Link
 } from "react-router-dom";
 import Home from './Components/Home/Home/Home';
-import Services from './Components/Admin/adminHome/Services';
 import Login from './Components/Login/Login/Login';
 import { createContext, useState } from 'react';
-import RegisterPage from './Components/ServiceRegister/RegisterPage/RegisterPage';
 import RegisterForm from './Components/ServiceRegister/RegisterForm/RegisterForm';
 import PrivateRoute from './Components/PrivateRoute/PrivateRoute';
-import ServiceRegisterInfo from './Components/ServiceRegisterInfo/ServiceRegisterInfo';
-import Feedback from './Components/Feedback/Feedback';
+import AdminHome from './Components/Admin/adminHome/AdminHome';
+import Dashboard from './Components/Admin/Dashboard/Dashboard';
+import MakeAdmin from './Components/Admin/MakeAdmin/MakeAdmin';
+import ClientDashboard from './Components/Client/ClientDashboard/ClientDashboard';
+import ClientFeedback from './Components/Client/ClientFeedback/ClientFeedback';
+import ParentDashboard from './Components/ParentDashboard/ParentDashboard';
+import Test from './Components/Home/WorkType/WorkType/Test';
 
 export const UserContext = createContext()
 
@@ -25,7 +27,7 @@ function App() {
 
 
   return (
-    <UserContext.Provider value={{ loggedInUser, setLoggedInUser, image, setImage}}>
+    <UserContext.Provider value={{ loggedInUser, setLoggedInUser, image, setImage }}>
 
       <Router>
         <Switch>
@@ -36,9 +38,8 @@ function App() {
           <Route path="/home">
             <Home></Home>
           </Route>
-
-          <Route path="/admin">
-            <Services></Services>
+          <Route path="/test">
+            <Test></Test>
           </Route>
 
 
@@ -50,15 +51,33 @@ function App() {
             <RegisterForm></RegisterForm>
           </PrivateRoute>
 
-          <Route path="/serviceRegister/:email">
+          {/* <Route path="/serviceRegister">
             <ServiceRegisterInfo></ServiceRegisterInfo>
-          </Route>
+          </Route> */}
 
-          <PrivateRoute path="/feedback">
-            <Feedback></Feedback>
+          <PrivateRoute path="/parentDashboard">
+            <ParentDashboard></ParentDashboard>
           </PrivateRoute>
 
+          <PrivateRoute path="/clientDashboard">
+            <ClientDashboard></ClientDashboard>
+          </PrivateRoute>
 
+          <PrivateRoute path="/feedback">
+            <ClientFeedback></ClientFeedback>
+          </PrivateRoute>
+
+          <PrivateRoute path="/addService">
+            <AdminHome></AdminHome>
+          </PrivateRoute>
+
+          <PrivateRoute path="/dashboard">
+            <Dashboard></Dashboard>
+          </PrivateRoute>
+
+          <PrivateRoute path="/makeAdmin">
+            <MakeAdmin></MakeAdmin>
+          </PrivateRoute>
 
 
         </Switch>

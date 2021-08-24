@@ -1,4 +1,4 @@
-.headerImage {
+/* .headerImage {
     animation-name: myAnimation;
     animation-duration: 6s;
     animation-iteration-count: 4;
@@ -8,12 +8,11 @@
     0% {left: 40px ; top: 0px;}
     50% {left: 0px ; top: 40px;}
     100% {left: 40px; top: 0px;}
-}
-
+} */
+/* 
 .headerText {
     animation-name: myAnimation2;
     animation-duration: 3s;
-    /* animation-iteration-count: infinite; */
     animation-fill-mode: forwards;
 }
 @keyframes myAnimation2 {
@@ -21,9 +20,23 @@
     100% {left: 0;}
 }
 
+.headerButton {
+    opacity: 0.6;
+    transition: box-shadow 1s;
+} */
 
-.headerButton:hover {
-    box-shadow: inset 150px 0 0 0 #a6cbe2;
-   
-    
+.headerText  h1{
+    font-weight: bold ;
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 576px) and (min-width: 300px){
+    .headerText h1 {
+        font-weight:bold;
+        font-size: 40px;
+
+    }
+    .headerText{
+        margin-left: 20px;
+    }
 }

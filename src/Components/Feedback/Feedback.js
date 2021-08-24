@@ -27,11 +27,9 @@ const Feedback = () => {
     }
 
     return (
-        <div className="col-md-10 col-sm-6 order-form " style={{ height: "" }}>
+        <div className="d-flex justify-content-center col-md-12 order-form " style={{marginTop:'80px', height: "100%", width: "100%", overflowX: "hidden"}}>
 
-            <h2 className="mb-3 pb-3">Review</h2>
-
-            <Form className="form" >
+            <Form className="form"  >
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Control type="text" value={loggedInUser.name} />
@@ -44,7 +42,7 @@ const Feedback = () => {
 
                 <Form.Group controlId="formBasicPassword">
                     <form >
-                        <textarea style={{ height: '200px', width: '500px' }} placeholder="Project Details.."
+                        <textarea style={{ height: '100%', width: '100%' }} placeholder="Project Details.."
                             onChange={(e) => setDescription(e.target.value)}   ></textarea>
                     </form>
                 </Form.Group>

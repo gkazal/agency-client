@@ -1,0 +1,43 @@
+.card-item{
+    margin-top: 20px;
+    
+}
+.dashboard{
+    overflow: hidden;
+}
+.card{
+    flex: 1;
+    margin: 0 20px;
+    padding: 10px;
+    height: 100px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 2px -1px;
+    overflow: hidden;
+}
+.card h5{
+    text-align: center;
+}
+.card-1{
+    background-color: #FBB117  !important
+}
+.card-2{
+    background-color: #1fd45b  !important
+}
+.card-3{
+    background-color: #FBB117 !important
+}
+.tableList{
+    margin-top: 40px;
+    margin: 20px;
+    padding: 0px;
+    background-color: rgb(238, 243, 237);
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 1px rgba(0, 0, 0, 0);
+
+}
+@media (max-width: 560px) {
+    .card h5{
+        font-size: 15px;
+    }
+
+}

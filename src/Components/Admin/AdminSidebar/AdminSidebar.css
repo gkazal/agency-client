@@ -1,0 +1,64 @@
+/* .side-menu{
+    background-image: linear-gradient(to bottom right,  rgb(119, 195, 201), rgb(153, 226, 202));
+    padding: 10px 10px;
+    height: 100vh;
+    position: fixed;
+    transition: 850ms;
+    left: 0;
+    transition: 850ms;
+    width: 228px;
+    overflow: hidden;
+}
+.sidebarListItem{
+    margin-top: 15px;
+}
+
+.sidebarListItem:hover{
+    background-color: rgb(190, 211, 228);
+    border-radius: 5px;
+    width: 90%;
+}
+.sidebarIcon svg{
+    margin-right: 10px;
+} */
+
+/* .side-menu inactive hole kicu hobe na */
+
+/* @media screen and (max-width: 1426px) {
+   
+    .side-menu{
+        left: -100%;
+        position: fixed;
+    }
+    .side-menu.inactive .side-menu{
+        left: 0px;
+        margin-top: 70px;
+    }
+   
+} */
+
+
+.sidebar-nav{
+    background-image: linear-gradient(to bottom right,  rgb(119, 195, 201), rgb(153, 226, 202));
+
+}
+.sidebarListItem{
+    margin-top: 15px;
+}
+
+.sidebarListItem:hover{
+    background-color: rgb(190, 211, 228);
+    border-radius: 5px;
+    width: 90%;
+}
+.sidebarIcon svg{
+    margin-right: 10px;
+}
+
+/* boro theke 765px porjonto sidebar visible  */
+@media (min-width: 1440px){
+    .sidebar-nav{
+        transform: none !important;
+        visibility: visible !important;
+    }
+}

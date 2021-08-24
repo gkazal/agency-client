@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
 import { useForm } from "react-hook-form";
-
+import AdminSidebar from '../AdminSidebar/AdminSidebar';
+import './Service.css'
 
 const Services = () => {
 
@@ -19,12 +20,12 @@ const Services = () => {
 
         fetch(url, {
             method: 'POST',
-            headers: { 
+            headers: {
                 'content-type': 'application/json'
             },
             body: JSON.stringify(evenData)
         })
-        .then( res => console.log('server side response', res))
+            .then(res => console.log('server side response', res))
     }
 
 
@@ -43,26 +44,34 @@ const Services = () => {
             .then(data => {
                 // setImageUrl(data.data.display_url)
                 setImageUrl(data.data.display_url)
+                alert('Inserted Successfully')
                 // console.log(data)
 
             })
             .catch(error => {
                 console.error(error)
+                alert(error)
             })
 
     }
 
     return (
-        <div className="d-flex justify-content-center">
-             <form onSubmit={handleSubmit(onSubmit)}>
-                <input name="name" defaultValue="test" {...register("Name")}  />
-                <br/>
-                <input name="example" type="file" onChange={handleImage} />
-                <br/>
-                <input type="submit" />
-            </form>
 
-        </div >
+        <div className="order-container">
+            <div className="service-bg" style={{ marginTop: '150px' }}>
+                <form onSubmit={handleSubmit(onSubmit)}>
+                    <label style={{ color: 'green', fontSize: '30px', fontWeight: 'bold' }} for="validationTooltip01">Title Name</label><br />
+                    <input name="name" defaultValue="" {...register("Name")} required />
+                    <br />
+                    <label style={{ color: 'green', fontSize: '30px', fontWeight: 'bold' }} for="validationTooltip01">Choose File</label> <br />
+                    <input name="example" type="file" onChange={handleImage} required />
+                    <br />
+                    <input style={{ cursor: 'pointer' }} className="submit-btn" type="submit" />
+                </form>
+
+            </div >
+        </div>
+
     );
 };
 
