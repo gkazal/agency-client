@@ -53,7 +53,7 @@ const Navbar = () => {
                             <Link class="nav-link mr-3" to="#">Our Team</Link>
                         </li>
                         <li class="nav-item">
-                            <Link class="nav-link mr-3" to="#">Contact Us</Link>
+                        <a className="nav-link mr-3" href="#contact">Contact Me</a>
                         </li>
                         {
                             loggedInUser.name ?

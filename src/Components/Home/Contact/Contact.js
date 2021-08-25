@@ -2,7 +2,7 @@ import React from 'react';
 import './Contact.css'
 const Contact = () => {
     return (
-        <div className="col-md-10 offset-md-1" style={{paddingBottom:'80px',marginTop:'40px'}}>
+        <div className="col-md-10 offset-md-1" id="contact" style={{paddingBottom:'80px',marginTop:'40px'}}>
             <div className="text-center pt-3 mb-2 pb-5">
                 <h1>Contact Us
                 </h1>
