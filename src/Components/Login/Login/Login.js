@@ -60,7 +60,7 @@ const Login = () => {
                     <img style={{ width: '100%', height: '100%' }} src={bgImage} alt="" />
                 </Col>
                 <Col md={6} sm={12}>
-                    <Form className="form" style={{backgroundColor: '#81D8D0'}}>
+                    <Form className="form-login" style={{backgroundColor: '#81D8D0'}}>
                         <Row style={{ fontSize: '25px', fontWeight: 'bold', justifyContent: 'center', marginBottom: '30px' }}>Login Form</Row>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label>Email</Form.Label>

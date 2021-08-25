@@ -1,0 +1,29 @@
+.row .map{
+    flex: 1 1 45rem;
+    width: 100%;
+    height: 400px;
+    padding: 10px;
+    /* border: var(--border); */
+    /* box-shadow: var(--box-shadow); */
+    border-radius: 10px;
+    background-color: #e2ddc6;
+}
+textarea {
+    width: 100%;
+    height: 250px;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    font-size: 16px;
+    resize: none;
+}
+.form{
+    background-color: #e9e4cf ;
+    /* border-radius: 0px;
+    height: 100%;
+    width: 100%;
+    max-width: 660px;*/
+    padding: 10px; 
+}

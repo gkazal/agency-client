@@ -29,7 +29,7 @@ const Feedback = () => {
     return (
         <div className="d-flex justify-content-center col-md-12 order-form " style={{marginTop:'80px', height: "100%", width: "100%", overflowX: "hidden"}}>
 
-            <Form className="form" style={{backgroundColor:'#81D8D0'}} >
+            <Form className="form-login" style={{backgroundColor:'#81D8D0'}} >
 
                 <Form.Group controlId="formBasicPassword">
                     <Form.Control type="text" value={loggedInUser.name} />

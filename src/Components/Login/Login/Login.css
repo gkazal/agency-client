@@ -1,11 +1,9 @@
-.form {
-    background-color: rgb(195, 216, 245);
+.form-login {
     border-radius: 20px;
     height: 100%;
     width: 100%;
     max-width: 500px;
     padding: 20px;
-    /* margin: auto; */
     
 }
 .form input{
