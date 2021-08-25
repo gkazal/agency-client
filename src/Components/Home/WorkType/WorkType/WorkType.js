@@ -68,13 +68,13 @@ const WorkType = () => {
 
     return (
         <section>
-            <div className=" " style={{ backgroundColor: '#F0F8FF', marginTop: '80px',paddingTop: '80px',marginBottom: '40px',paddingBottom:'90px'}} >
-                <div className=" ">
-                    <div>
+            <div className=" " style={{ backgroundColor: '#F0F8FF', marginTop: '80px',paddingTop: '80px',paddingBottom:'90px'}} >
+                <div className=" col-md-10 offset-md-1">
+                    <div className=" justify-content-center">
                         <h6 className="text-danger" style={cardStyle}> What We Do?</h6>
                         <h1 style={cardStyle}>Services We Can Help You With</h1>
                     </div>
-                    <div className="container" >
+                    <div className=" " >
                         <Slider {...settings}>
                             {
                                 services.map(services => <ServiceList services={services}></ServiceList>)
