@@ -26,6 +26,8 @@ const Services = () => {
             body: JSON.stringify(evenData)
         })
             .then(res => console.log('server side response', res))
+            alert('Inserted Successfully')
+
     }
 
 
@@ -44,7 +46,6 @@ const Services = () => {
             .then(data => {
                 // setImageUrl(data.data.display_url)
                 setImageUrl(data.data.display_url)
-                alert('Inserted Successfully')
                 // console.log(data)
 
             })
@@ -66,7 +67,7 @@ const Services = () => {
                     <label style={{ color: 'green', fontSize: '30px', fontWeight: 'bold' }} for="validationTooltip01">Choose File</label> <br />
                     <input name="example" type="file" onChange={handleImage} required />
                     <br />
-                    <input style={{ cursor: 'pointer' }} className="submit-btn" type="submit" />
+                    <input style={{ cursor: 'pointer' }} className="submit-btn" type="submit"/>
                 </form>
 
             </div >
