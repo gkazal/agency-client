@@ -58,7 +58,7 @@ const DashboardHome = () => {
 
     const [booking, setBooking] = useState([])
     useEffect(() => {
-        fetch('http://localhost:8088/showAllServiceList')
+        fetch('https://ancient-bastion-82733.herokuapp.com/showAllServiceList')
             .then(response => response.json())
             .then(data => setBooking(data))
     }, [])

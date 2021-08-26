@@ -5,7 +5,7 @@ const ShowFeedback = () => {
 
     const [data, setData] = useState([])
     useEffect(() => {
-        fetch('http://localhost:8088/showFeedback')
+        fetch('https://ancient-bastion-82733.herokuapp.com/showFeedback')
             .then(res => res.json())
             .then(data => setData(data))
 

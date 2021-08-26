@@ -14,7 +14,7 @@ const Dashboard = () => {
     const [isAdmin, setIsAdmin] = useState(false)
 
     useEffect(() => {
-        fetch('http://localhost:8088/isAdmin', {
+        fetch('https://ancient-bastion-82733.herokuapp.com/isAdmin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ email: loggedInUser.email })

@@ -41,7 +41,7 @@ const RegisterForm = () => {
 
         const newBookings = { ...loggedInUser, ...selectedDate, ...serviceName, ...serviceImage }
 
-        fetch('http://localhost:8088/addRegisterService', {
+        fetch('https://ancient-bastion-82733.herokuapp.com/addRegisterService', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newBookings)

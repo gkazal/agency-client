@@ -14,7 +14,7 @@ const Feedback = () => {
         review.company = company
         review.image = loggedInUser.image
 
-        fetch('http://localhost:8088/addFeedback', {
+        fetch('https://ancient-bastion-82733.herokuapp.com/addFeedback', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(review)

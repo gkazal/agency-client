@@ -12,7 +12,7 @@ const WorkType = () => {
 
     // show services list from DB
     useEffect(() => {
-        fetch('http://localhost:8088/services')
+        fetch('https://ancient-bastion-82733.herokuapp.com/services')
             .then(res => res.json())
             .then(data => setServices(data))
 

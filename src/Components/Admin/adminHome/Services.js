@@ -15,7 +15,7 @@ const Services = () => {
             name: data.Name,
             imageUrl: imageUrl
         }
-        const url = `http://localhost:8088/addServices`
+        const url = `https://ancient-bastion-82733.herokuapp.com/addServices`
         console.log(evenData)
 
         fetch(url, {

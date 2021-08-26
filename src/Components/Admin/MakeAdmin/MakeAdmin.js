@@ -14,7 +14,7 @@ const MakeAdmin = () => {
         const newAdmin = {}
         newAdmin.email = admin
 
-        fetch('http://localhost:8088/makeAdmin', {
+        fetch('https://ancient-bastion-82733.herokuapp.com/makeAdmin', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify(newAdmin)

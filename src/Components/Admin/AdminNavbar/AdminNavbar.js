@@ -7,26 +7,17 @@ import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 import Button from '@material-ui/core/Button';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
-import { useHistory } from 'react-router-dom';
 
 
 const AdminNavbar = () => {
     const { loggedInUser, setLoggedInUser } = useContext(UserContext)
-
 
     const [anchorEl, setAnchorEl] = React.useState(null);
 
     const handleClick = (event) => {
         setAnchorEl(event.currentTarget);
     };
-
-    // when logout then reload page and push to home page.
-    const history = useHistory()
-    const handleClose = () => {
-        history.push('/home');
-        window.location.reload();
-        // setLoggedInUser({})
-    };
+    
     const closeButton = () => {
         setAnchorEl(null);
     };
@@ -53,9 +44,9 @@ const AdminNavbar = () => {
                         open={Boolean(anchorEl)}
                         onClose={closeButton}
                     >
-                        <MenuItem onClick={handleClose}>Profile</MenuItem>
-                        <MenuItem onClick={handleClose}>My account</MenuItem>
-                        <MenuItem onClick={handleClose}>Logout</MenuItem>
+                        <MenuItem >Profile</MenuItem>
+                        <MenuItem >My account</MenuItem>
+                        <MenuItem onClick={() => setLoggedInUser({})}>Logout</MenuItem>
                     </Menu>
                 </div>
 
