@@ -39,7 +39,7 @@ const Login = () => {
                 history.replace(from)
 
                 // when login then directly go to parent dashboard.
-                history.push('/parentDashboard')
+                // history.push('/parentDashboard')
                 
                 // ...
             }).catch((error) => {
